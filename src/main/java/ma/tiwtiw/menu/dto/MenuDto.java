@@ -29,7 +29,6 @@ public class MenuDto extends BaseDto<Menu, String> {
   private String target;
 
   private MenuIconDTO icon;
-  private String iconValue;
 
   private Long badge;
 
