@@ -1,0 +1,5 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://tiwtiw-database/prod_menu
+      database: prod_menu
