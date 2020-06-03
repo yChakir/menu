@@ -1,5 +1,5 @@
 package ma.tiwtiw.menu.model;
 
-enum MenuIconThemeEnum {
+public enum MenuIconThemeEnum {
   OUTLINE, TWOTONE, FILL
 }

@@ -1,5 +1,5 @@
 package ma.tiwtiw.menu.model;
 
-enum MenuIconTypeEnum {
+public enum MenuIconTypeEnum {
   CLASS, ICON, ICONFONT, IMG
 }

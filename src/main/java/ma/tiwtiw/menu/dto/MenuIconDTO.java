@@ -1,4 +1,4 @@
-package ma.tiwtiw.menu.model;
+package ma.tiwtiw.menu.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,18 +9,17 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class MenuIcon {
+public class MenuIconDTO {
 
-  private MenuIconTypeEnum type = MenuIconTypeEnum.ICON;
+  private String type;
 
   private String value;
 
-  private MenuIconThemeEnum theme = MenuIconThemeEnum.OUTLINE;
+  private String theme;
 
-  private Boolean spin = Boolean.FALSE;
+  private Boolean spin;
 
   private String twoToneColor;
 
   private String iconfont;
-
 }
