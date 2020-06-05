@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("menus")
-public class MenuController extends BaseRestController<Menu, MenuDto, String, MenuService> {
+public class MenuController extends BaseRestController<Menu, MenuDto, String> {
 
   private final MenuService menuService;
 

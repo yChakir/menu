@@ -1,18 +1,24 @@
 package ma.tiwtiw.menu.service.impl;
 
-import lombok.RequiredArgsConstructor;
-import ma.tiwtiw.menu.repository.MenuRepository;
+import ma.tiwtiw.core.service.impl.BaseMongoTemplateServiceImpl;
+import ma.tiwtiw.menu.model.Menu;
 import ma.tiwtiw.menu.service.MenuService;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;
 
 @Service
-@RequiredArgsConstructor
-public class MenuServiceImpl implements MenuService {
+public class MenuServiceImpl extends BaseMongoTemplateServiceImpl<Menu, String> implements
+    MenuService {
 
-  private final MenuRepository menuRepository;
+  private final MongoTemplate mongoTemplate;
+
+  public MenuServiceImpl(MongoTemplate mongoTemplate) {
+    super(Menu.class);
+    this.mongoTemplate = mongoTemplate;
+  }
 
   @Override
-  public MenuRepository getRepository() {
-    return menuRepository;
+  protected MongoTemplate getMongoTemplate() {
+    return mongoTemplate;
   }
 }
