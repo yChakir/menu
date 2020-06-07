@@ -46,8 +46,7 @@ public class Menu extends BaseModel<String> {
 
   private Boolean hideInBreadcrumb;
 
-  @Default
-  private List<String> acl = new ArrayList<>();
+  private ACLType acl;
 
   private Boolean shortcut;
 

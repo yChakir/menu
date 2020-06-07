@@ -28,7 +28,7 @@ public class MenuDto extends BaseDto<Menu, String> {
 
   private String target;
 
-  private MenuIconDTO icon;
+  private MenuIconDto icon;
 
   private Long badge;
 
@@ -40,7 +40,7 @@ public class MenuDto extends BaseDto<Menu, String> {
 
   private Boolean hideInBreadcrumb;
 
-  private List<String> acl;
+  private ACLTypeDto acl;
 
   private Boolean shortcut;
 
