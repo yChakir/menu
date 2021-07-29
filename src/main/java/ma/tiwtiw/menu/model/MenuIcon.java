@@ -13,15 +13,14 @@ import lombok.NoArgsConstructor;
 public class MenuIcon {
 
   @Default
-  private MenuIconTypeEnum type = MenuIconTypeEnum.ICON;
+  private MenuIconTypeEnum type = MenuIconTypeEnum.icon;
 
   private String value;
 
-  @Default
-  private MenuIconThemeEnum theme = MenuIconThemeEnum.OUTLINE;
+  private MenuIconThemeEnum theme;
 
   @Default
-  private Boolean spin = Boolean.FALSE;
+  private Boolean spin = Boolean.TRUE;
 
   private String twoToneColor;
 
